@@ -106,7 +106,7 @@ func main() {
 					//FormatFloat converts the floating-point number to a string, according to the format fmt and precision prec. It rounds the result assuming that the original was obtained from a floating-point value of bitSize bits (32 for float32, 64 for float64).
 					
 					//float64 is a version of float that stores decimal values using a total of 64-bits of data.
-					input= strconv.FormatFloat(result.(float64),'f', -1, 64) // formats the result which is in string to float. Format in ->'f' (-ddd.dddd, no exponent), The special precision -1 uses the smallest number of digits necessary such that ParseFloat will return f exactly. ref : https://pkg.go.dev/strconv#FormatFloat
+					input= strconv.FormatFloat(result.(float64),'f', -1, 64) // formats the result which is in float to string. Format in ->'f' (-ddd.dddd, no exponent), The special precision -1 uses the smallest number of digits necessary such that ParseFloat will return f exactly. ref : https://stackoverflow.com/questions/19101419/formatfloat-convert-float-number-to-string/19101700#19101700
 				}else{
 					input="error"
 					}
